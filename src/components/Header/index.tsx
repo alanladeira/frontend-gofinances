@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUpload } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
 
@@ -13,11 +14,15 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
   <Container size={size}>
     <header>
-      <img src={Logo} alt="GoFinances" />
+      <Link to="/">
+        <img src={Logo} alt="GoFinances" />
+      </Link>
+
       <nav>
-        {
-          // Todo
-        }
+        <Link to="/import">
+          <FaUpload size={18} color="#fff" />
+          Importar Arquivo .csv
+        </Link>
       </nav>
     </header>
   </Container>
