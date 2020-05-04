@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
       <nav>
         <Link to="/import">
           <FaUpload size={18} color="#fff" />
-          Importar Arquivo .csv
+          Importar
         </Link>
       </nav>
     </header>
